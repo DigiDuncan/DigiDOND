@@ -1,0 +1,2 @@
+python digidond.py
+pause
