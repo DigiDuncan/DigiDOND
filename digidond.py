@@ -30,10 +30,10 @@ def generateCases():
         cases[i+1] = possiblevalues[i]
 
 def printCases():
-#     [1] [2] [3] [4] [5] [6]
-# [7] [8] [9] [10] [11] [12] [13]
-#  [14] [15] [16] [17] [18] [19]
-#[20] [21] [22] [23] [24] [25] [26]
+#       [1]  [2]  [3]  [4]  [5]  [6]
+#  [7]  [8]  [9]  [10]  [11]  [12]  [13]
+#   [14]  [15]  [16]  [17]  [18]  [19]
+#[20]  [21]  [22]  [23]  [24]  [25]  [26]
 
     casestoprint = []
     stringtoprint = ""
@@ -41,22 +41,22 @@ def printCases():
         if cases.get(casenum) is not None:
             casestoprint.append(casenum)
 
-    stringtoprint += "    "
+    stringtoprint += "       "
     for i in range(1, 7):
         if i in casestoprint: stringtoprint += f"[{i}]"
-        else: stringtoprint += f"[{' ' * len(str(i))}]"
-    stringtoprint += "\n "
+        else: stringtoprint += f"[{'  ' * len(str(i))}]"
+    stringtoprint += "\n  "
     for i in range(7, 14):
         if i in casestoprint: stringtoprint += f"[{i}]"
-        else: stringtoprint += f"[{' ' * len(str(i))}]"
-    stringtoprint += "\n  "
+        else: stringtoprint += f"[{'  ' * len(str(i))}]"
+    stringtoprint += "\n   "
     for i in range(14, 20):
         if i in casestoprint: stringtoprint += f"[{i}]"
-        else: stringtoprint += f"[{' ' * len(str(i))}]"
+        else: stringtoprint += f"[{'  ' * len(str(i))}]"
     stringtoprint += "\n"
     for i in range(20, 27):
         if i in casestoprint: stringtoprint += f"[{i}]"
-        else: stringtoprint += f"[{' ' * len(str(i))}]"
+        else: stringtoprint += f"[{'  ' * len(str(i))}]"
 
     print(stringtoprint)
 
