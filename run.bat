@@ -1,2 +1,2 @@
-python digidond.py
+py digidond.py
 pause

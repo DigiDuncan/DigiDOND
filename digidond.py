@@ -43,20 +43,20 @@ def printCases():
 
     stringtoprint += "       "
     for i in range(1, 7):
-        if i in casestoprint: stringtoprint += f"[{i}]"
-        else: stringtoprint += f"[{'  ' * len(str(i))}]"
+        if i in casestoprint: stringtoprint += f"[{i}]  "
+        else: stringtoprint += f"[{'  ' * len(str(i))}]  "
     stringtoprint += "\n  "
     for i in range(7, 14):
-        if i in casestoprint: stringtoprint += f"[{i}]"
-        else: stringtoprint += f"[{'  ' * len(str(i))}]"
+        if i in casestoprint: stringtoprint += f"[{i}]  "
+        else: stringtoprint += f"[{'  ' * len(str(i))}]  "
     stringtoprint += "\n   "
     for i in range(14, 20):
-        if i in casestoprint: stringtoprint += f"[{i}]"
-        else: stringtoprint += f"[{'  ' * len(str(i))}]"
+        if i in casestoprint: stringtoprint += f"[{i}]  "
+        else: stringtoprint += f"[{'  ' * len(str(i))}]  "
     stringtoprint += "\n"
     for i in range(20, 27):
-        if i in casestoprint: stringtoprint += f"[{i}]"
-        else: stringtoprint += f"[{'  ' * len(str(i))}]"
+        if i in casestoprint: stringtoprint += f"[{i}]  "
+        else: stringtoprint += f"[{'  ' * len(str(i))}]  "
 
     print(stringtoprint)
 
